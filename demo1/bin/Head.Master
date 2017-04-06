@@ -1,0 +1,22 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Head.master.cs" Inherits="demo1.Head" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>atalent</title>
+</head>
+<body class="Style.css">
+    <form id="form1" runat="server">
+        <div style="margin:0px auto; width:100%;height:100%; align-content:center" >
+            <img src="image/registration_form_header_photo.png" style="width:100%;height:100%"/>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="RegisterSuccess" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Head.master.cs" Inherits="demo1.Head" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Wechat Recruitment 2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1,target-densitydpi=medium-dpi">
+    <link href="Style.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="Style.css">
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?3d8de6a18cdea4f4df5a2a319038d31d";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-96559173-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <form id="form1" runat="server">
+        <div style="margin: 0px auto; width: 100%; height: 100%; align-content: center">
+            <img src="image/registration_form_header_photo.png" style="width: 100%; height: 100%" />
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="RegisterSuccess" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="SurveyForm" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
